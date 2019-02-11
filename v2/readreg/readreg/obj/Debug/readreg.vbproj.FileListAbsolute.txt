@@ -1,0 +1,22 @@
+H:\c#\unsinn\readreg\readreg\bin\Debug\readreg.exe
+H:\C#\unsinn\readreg\readreg\obj\Debug\readreg.vbprojResolveAssemblyReference.cache
+H:\C#\unsinn\readreg\readreg\obj\Debug\readreg.Form1.resources
+H:\C#\unsinn\readreg\readreg\obj\Debug\readreg.Resources.resources
+H:\C#\unsinn\readreg\readreg\obj\Debug\readreg.vbproj.GenerateResource.Cache
+H:\C#\unsinn\readreg\readreg\obj\Debug\readreg.exe
+H:\C#\unsinn\readreg\readreg\obj\Debug\readreg.xml
+H:\C#\unsinn\readreg\readreg\obj\Debug\readreg.pdb
+H:\C#\unsinn\readreg\readreg\bin\Debug\readreg.pdb
+H:\C#\unsinn\readreg\readreg\bin\Debug\readreg.xml
+K:\000Schwarzmarkt\Eigene Projekte\ProgHide\v2\readreg\readreg\bin\Debug\readreg.exe
+K:\000Schwarzmarkt\Eigene Projekte\ProgHide\v2\readreg\readreg\bin\Debug\readreg.pdb
+K:\000Schwarzmarkt\Eigene Projekte\ProgHide\v2\readreg\readreg\bin\Debug\readreg.xml
+K:\000Schwarzmarkt\Eigene Projekte\ProgHide\v2\readreg\readreg\obj\Debug\readreg.Form1.resources
+K:\000Schwarzmarkt\Eigene Projekte\ProgHide\v2\readreg\readreg\obj\Debug\readreg.Resources.resources
+K:\000Schwarzmarkt\Eigene Projekte\ProgHide\v2\readreg\readreg\obj\Debug\readreg.vbproj.GenerateResource.cache
+K:\000Schwarzmarkt\Eigene Projekte\ProgHide\v2\readreg\readreg\obj\Debug\readreg.vbproj.CoreCompileInputs.cache
+K:\000Schwarzmarkt\Eigene Projekte\ProgHide\v2\readreg\readreg\obj\Debug\readreg.exe
+K:\000Schwarzmarkt\Eigene Projekte\ProgHide\v2\readreg\readreg\obj\Debug\readreg.xml
+K:\000Schwarzmarkt\Eigene Projekte\ProgHide\v2\readreg\readreg\obj\Debug\readreg.pdb
+K:\000Schwarzmarkt\Eigene Projekte\ProgHide\v2\readreg\readreg\obj\Debug\readreg.vbprojAssemblyReference.cache
+K:\000Schwarzmarkt\Eigene Projekte\ProgHide\v2\readreg\readreg\obj\Debug\readreg.Readregabout.resources

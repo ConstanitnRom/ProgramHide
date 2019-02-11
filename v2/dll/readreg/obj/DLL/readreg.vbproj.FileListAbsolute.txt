@@ -1,0 +1,6 @@
+K:\000Schwarzmarkt\Eigene Projekte\ProgHide\v2\readreg\readreg\obj\DLL\readreg.vbprojAssemblyReference.cache
+K:\000Schwarzmarkt\Eigene Projekte\ProgHide\v2\readreg\readreg\obj\DLL\readreg.Readregabout.resources
+K:\000Schwarzmarkt\Eigene Projekte\ProgHide\v2\readreg\readreg\obj\DLL\readreg.Form1.resources
+K:\000Schwarzmarkt\Eigene Projekte\ProgHide\v2\readreg\readreg\obj\DLL\readreg.Resources.resources
+K:\000Schwarzmarkt\Eigene Projekte\ProgHide\v2\readreg\readreg\obj\DLL\readreg.vbproj.GenerateResource.cache
+K:\000Schwarzmarkt\Eigene Projekte\ProgHide\v2\readreg\readreg\obj\DLL\readreg.vbproj.CoreCompileInputs.cache

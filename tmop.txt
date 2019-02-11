@@ -1,0 +1,32 @@
+private void Button1_Click(object sender, EventArgs e)
+	{
+		string text = complete[ListBox1.SelectedIndex];
+		checked
+		{
+			try
+			{
+				if ((Operators.CompareString(ComboBox1.SelectedItem.ToString(), "Sichtbar", TextCompare: false) == 0) & (Operators.CompareString(text.Substring(0, 18), "HKEY_LOCAL_MACHINE", TextCompare: false) == 0))
+				{
+					MyProject.Computer.Registry.LocalMachine.OpenSubKey(text.Substring(19, text.Length - 19), writable: true).SetValue("SystemComponent", 0, RegistryValueKind.DWord);
+				}
+				else if ((Operators.CompareString(ComboBox1.SelectedItem.ToString(), "Sichtbar", TextCompare: false) == 0) & (Operators.CompareString(text.Substring(0, 17), "HKEY_CURRENT_USER", TextCompare: false) == 0))
+				{
+					MyProject.Computer.Registry.CurrentUser.OpenSubKey(text.Substring(18, text.Length - 18), writable: true).SetValue("SystemComponent", 0, RegistryValueKind.DWord);
+				}
+				else if ((Operators.CompareString(ComboBox1.SelectedItem.ToString(), "Unsichtbar", TextCompare: false) == 0) & (Operators.CompareString(text.Substring(0, 18), "HKEY_LOCAL_MACHINE", TextCompare: false) == 0))
+				{
+					MyProject.Computer.Registry.LocalMachine.OpenSubKey(text.Substring(19, text.Length - 19), writable: true).SetValue("SystemComponent", 1, RegistryValueKind.DWord);
+				}
+				else
+				{
+					MyProject.Computer.Registry.CurrentUser.OpenSubKey(text.Substring(18, text.Length - 18), writable: true).SetValue("SystemComponent", 1, RegistryValueKind.DWord);
+				}
+			}
+			catch (Exception projectError)
+			{
+				ProjectData.SetProjectError(projectError);
+				MessageBox.Show("Ungültiger Schlüssel");
+				ProjectData.ClearProjectError();
+			}
+		}
+	}

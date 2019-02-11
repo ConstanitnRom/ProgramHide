@@ -1,0 +1,10 @@
+H:\C#\unsinn\readreg\readreg\bin\Release\readreg.exe
+H:\C#\unsinn\readreg\readreg\bin\Release\readreg.pdb
+H:\C#\unsinn\readreg\readreg\bin\Release\readreg.xml
+H:\C#\unsinn\readreg\readreg\obj\Release\readreg.vbprojResolveAssemblyReference.cache
+H:\C#\unsinn\readreg\readreg\obj\Release\readreg.Form1.resources
+H:\C#\unsinn\readreg\readreg\obj\Release\readreg.Resources.resources
+H:\C#\unsinn\readreg\readreg\obj\Release\readreg.vbproj.GenerateResource.Cache
+H:\C#\unsinn\readreg\readreg\obj\Release\readreg.exe
+H:\C#\unsinn\readreg\readreg\obj\Release\readreg.xml
+H:\C#\unsinn\readreg\readreg\obj\Release\readreg.pdb
