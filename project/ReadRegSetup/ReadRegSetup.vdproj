@@ -82,6 +82,14 @@
             "PrerequisitesLocation" = "2:1"
             "Url" = "8:"
             "ComponentsUrl" = "8:"
+                "Items"
+                {
+                    "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:.NETFramework,Version=v4.6.1"
+                    {
+                    "Name" = "8:Microsoft .NET Framework 4.6.1 (x86 and x64)"
+                    "ProductCode" = "8:.NETFramework,Version=v4.6.1"
+                    }
+                }
             }
         }
     }
@@ -179,15 +187,15 @@
         {
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:Program Hide"
-        "ProductCode" = "8:{DBFA4594-4480-4584-8FF1-1464A402E769}"
-        "PackageCode" = "8:{254FD80A-5EC6-47EE-89E5-8D485FCCFC24}"
+        "ProductCode" = "8:{3B491104-B405-4A6B-9C35-DAE7EA86FB29}"
+        "PackageCode" = "8:{D82B2D95-D645-44FF-972D-0A776907293E}"
         "UpgradeCode" = "8:{A7A7D49B-CC2A-4D83-8C4B-ACA204CCF403}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"
         "RemovePreviousVersions" = "11:TRUE"
         "DetectNewerInstalledVersion" = "11:TRUE"
         "InstallAllUsers" = "11:TRUE"
-        "ProductVersion" = "8:3.2.46"
+        "ProductVersion" = "8:3.2.109"
         "Manufacturer" = "8:Constantin Rom"
         "ARPHELPTELEPHONE" = "8:"
         "ARPHELPLINK" = "8:"
@@ -729,7 +737,7 @@
         {
             "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_BD17B4B8015F40D8BAF94E98089E238F"
             {
-            "SourcePath" = "8:..\\readreg\\obj\\Debug\\readreg.exe"
+            "SourcePath" = "8:..\\readreg\\obj\\Release\\readreg.exe"
             "TargetName" = "8:"
             "Tag" = "8:"
             "Folder" = "8:_75033360DDEE4BAF83F96DE663F2155B"
