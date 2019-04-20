@@ -12,7 +12,8 @@ Public Class Form1
 
     Private Sub Form1_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
         Application.EnableVisualStyles()
-
+        ComboBox1.Items.Add("Sichtbar")
+        ComboBox1.Items.Add("Unsichtbar")
         DataGridView1.ReadOnly = True
         DataGridView1.MultiSelect = False
 
@@ -23,8 +24,7 @@ Public Class Form1
         FillCurrentUserList("SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall")
 
         FillCurrentUserList("SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Uninstall")
-        ComboBox1.Items.Add("Sichtbar")
-        ComboBox1.Items.Add("Unsichtbar")
+
         ComboBox1.SelectedIndex = 0
 
     End Sub
@@ -122,7 +122,15 @@ Public Class Form1
     End Sub
 
     Private Sub DataGridView1_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridView1.CellContentClick
-        Dim i As String = 0
+
+    End Sub
+
+    Private Sub DataGridView1_SelectionChanged(sender As Object, e As EventArgs) Handles DataGridView1.SelectionChanged
+
+
+
+        Dim i As String
+
 
         If DataGridView1.SelectedRows.Count <> 0 Then
             Dim row As DataGridViewRow = Me.DataGridView1.SelectedRows(0)
@@ -131,12 +139,12 @@ Public Class Form1
             Try
 
 
-
+                Dim test As String = text.Substring(19, text.Length - 19)
 
                 If (Operators.CompareString(text.Substring(0, 18), "HKEY_LOCAL_MACHINE", TextCompare:=False) = 0) Then
-                    i = Registry.LocalMachine.OpenSubKey(text.Substring(19, text.Length - 19), writable:=True).GetValue("SystemComponent", 0, RegistryValueKind.DWord)
+                    i = Registry.LocalMachine.OpenSubKey(text.Substring(19, text.Length - 19)).GetValue("SystemComponent", 0)
                 ElseIf (Operators.CompareString(text.Substring(0, 17), "HKEY_CURRENT_USER", TextCompare:=False) = 0) Then
-                    i = Registry.CurrentUser.OpenSubKey(text.Substring(18, text.Length - 18), writable:=True).GetValue("SystemComponent", 0, RegistryValueKind.DWord)
+                    i = Registry.CurrentUser.OpenSubKey(text.Substring(18, text.Length - 18)).GetValue("SystemComponent", 0)
 
                 End If
 
@@ -145,13 +153,20 @@ Public Class Form1
             End Try
 
 
-            If i = 0 Then
+            If i = 0 Or i = -1 Then
                 ComboBox1.SelectedIndex = 0
+
             Else
                 ComboBox1.SelectedIndex = 1
             End If
-
         End If
+
+
+
+
+
+
+
     End Sub
 End Class
 
