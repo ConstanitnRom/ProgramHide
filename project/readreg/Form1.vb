@@ -1,4 +1,5 @@
-﻿Imports Microsoft.VisualBasic.CompilerServices
+﻿Imports System.ComponentModel
+Imports Microsoft.VisualBasic.CompilerServices
 Imports Microsoft.Win32
 
 
@@ -12,6 +13,7 @@ Public Class Form1
 
     Private Sub Form1_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
         Application.EnableVisualStyles()
+
         ComboBox1.Items.Add("Sichtbar")
         ComboBox1.Items.Add("Unsichtbar")
         DataGridView1.ReadOnly = True
@@ -25,8 +27,8 @@ Public Class Form1
 
         FillCurrentUserList("SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Uninstall")
 
-        ComboBox1.SelectedIndex = 0
 
+        DataGridView1.Sort(DataGridView1.Columns(0), ListSortDirection.Ascending)
     End Sub
 
     Public Sub FillMachineList(path As String)
@@ -118,7 +120,7 @@ Public Class Form1
     End Sub
 
     Private Sub AboutLink_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles AboutLink.LinkClicked
-        Readregabout.ShowDialog()
+        ReadRegAbout.ShowDialog()
     End Sub
 
     Private Sub DataGridView1_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridView1.CellContentClick
